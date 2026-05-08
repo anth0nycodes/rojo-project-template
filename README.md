@@ -12,6 +12,14 @@ rojo init
 
 Remove everything under `Workspace` inside `default.project.json` unless you want Rojo to control instances.
 
+### Generate Sourcemap
+
+If `sourcemap.json` wasn't created after `rojo init`, generate it manually:
+
+```bash
+rojo sourcemap default.project.json --output sourcemap.json
+```
+
 ## 2. Project Structure
 
 Everything under `src/` is where you write code. File extensions determine script type:
